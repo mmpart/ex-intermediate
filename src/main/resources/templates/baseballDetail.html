@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" th:action="@{/baseball/baseballDetail}" th:object="${baseballdetailForm}">
+球団名<br>
+<span th:text="${baseball.name}"></span>
+本拠地<br>
+<span th:text="${baseball.teamName}"></span>
+発足<br>
+<span th:text="${baseball.inauguration}"></span>
+歴史<br>
+<span th:text="${baseball.history}"></span>
+<button type="submit" onclick="location.href='./baseballteamList.html'">戻る</button>
+</form>
+</body>
+</html>
