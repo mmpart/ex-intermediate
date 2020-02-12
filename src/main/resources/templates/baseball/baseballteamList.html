@@ -6,13 +6,11 @@
 </head>
 <body>
 <h1>野球チーム一覧</h1>
-<form  action="baseballDetail.html" th:action="@{/baseball/showList}" method="post" th:object="${baseballdetailForm}">
 <span th:each="baseballteam:${baseballList}">
 <a href="baseballDetail.html" th:href="@{'/baseball/showDetail?id='+${baseballteam.id}}">
 	<span th:text="${baseballteam.teamName}">読売ジャイアンツ</span>
 </a><br>
 <br>
 </span>
-</form>
 </body>
 </html>

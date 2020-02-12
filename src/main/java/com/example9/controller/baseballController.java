@@ -36,7 +36,7 @@ public class baseballController {
 	@RequestMapping("/showList")
 	public String showList(Model model) {
 		model.addAttribute("baseballList",	baseballservice.showList());
-		return "baseballteamList";
+		return "baseball/baseballteamList";
 	}
 	
 	/**
@@ -49,6 +49,6 @@ public class baseballController {
 	@RequestMapping("/showDetail")
 	public String showDetail(String id,Model model) {
 		model.addAttribute("baseball", baseballservice.showDetail(Integer.parseInt(id)));
-		return "baseballDetail";
+		return "baseball/baseballDetail";
 	}
 }

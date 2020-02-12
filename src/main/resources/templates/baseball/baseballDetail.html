@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form method="post" th:action="@{/baseball/baseballDetail}" th:object="${baseballdetailForm}">
+<form method="post" th:action="@{/baseball/showList}" th:object="${baseballdetailForm}">
 <b>球団名</b><br>
 <span th:text="${baseball.teamName}"></span><br>
 <b>本拠地</b><br>
@@ -13,8 +13,8 @@
 <b>発足</b><br>
 <span th:text="${baseball.inauguration}"></span><br>
 <b>歴史</b><br>
-<span th:text="${baseball.history}"></span><br>
-<button type="submit" onclick="location.href='/baseball/showList'">戻る</button>
+<pre th:text="${baseball.history}"></pre><br>
+<button type="submit" >戻る</button>
 </form>
 </body>
 </html>
