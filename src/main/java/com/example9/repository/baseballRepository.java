@@ -29,7 +29,7 @@ public class baseballRepository {
 	public static final RowMapper<Baseballdetail>BASEBALLDETAIL_ROW_MAPPER = (rs,i)  -> {
 		Baseballdetail baseballdetail = new Baseballdetail();
 		baseballdetail.setId(rs.getInt("id"));
-		baseballdetail.setLeagueName(rs.getString("langue_name"));
+		baseballdetail.setLeagueName(rs.getString("league_name"));
 		baseballdetail.setTeamName(rs.getString("team_name"));
 		baseballdetail.setHeadquarters(rs.getString("headquarters"));
 		baseballdetail.setInauguration(rs.getString("inauguration"));

@@ -6,15 +6,15 @@
 </head>
 <body>
 <form method="post" th:action="@{/baseball/baseballDetail}" th:object="${baseballdetailForm}">
-球団名<br>
-<span th:text="${baseball.name}"></span>
-本拠地<br>
-<span th:text="${baseball.teamName}"></span>
-発足<br>
-<span th:text="${baseball.inauguration}"></span>
-歴史<br>
-<span th:text="${baseball.history}"></span>
-<button type="submit" onclick="location.href='./baseballteamList.html'">戻る</button>
+<b>球団名</b><br>
+<span th:text="${baseball.teamName}"></span><br>
+<b>本拠地</b><br>
+<span th:text="${baseball.headquarters}"></span><br>
+<b>発足</b><br>
+<span th:text="${baseball.inauguration}"></span><br>
+<b>歴史</b><br>
+<span th:text="${baseball.history}"></span><br>
+<button type="submit" onclick="location.href='/baseball/showList'">戻る</button>
 </form>
 </body>
 </html>
